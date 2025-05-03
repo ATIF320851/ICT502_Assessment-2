@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic setup for the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyLife Clinic - Contact Us</title>
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with clinic name and navigation -->
+    <header>
+        <div class="container">
+            <h1>HealthyLife Clinic</h1>
+            <nav>
+                <!-- Navigation menu -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main class="container">
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Address</h3>
+                    <p>123 Health Street<br>Wellness City, WC 12345</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>info@healthylifeclinic.com</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Hours</h3>
+                    <p>Monday-Friday: 8am-6pm<br>
+                    Saturday: 9am-2pm<br>
+                    Sunday: Closed</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contact-name">Name:</label>
+                    <input type="text" id="contact-name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email:</label>
+                    <input type="email" id="contact-email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-subject">Subject:</label>
+                    <input type="text" id="contact-subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message:</label>
+                    <textarea id="contact-message" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 HealthyLife Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

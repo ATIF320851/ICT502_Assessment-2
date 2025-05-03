@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic setup for the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyLife Clinic - Book Appointment</title>
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with clinic name and navigation -->
+    <header>
+        <div class="container">
+            <h1>HealthyLife Clinic</h1>
+            <nav>
+                <!-- Navigation menu -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="appointment.html" class="active">Book Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main class="container">
+        <section class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <p>Fill out the form below to schedule your visit.</p>
+            
+            <!-- Appointment form -->
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed:</label>
+                    <select id="service" required>
+                        <option value="">Select a service</option>
+                        <option value="checkup">General Checkup</option>
+                        <option value="vaccination">Vaccination</option>
+                        <option value="counseling">Health Counseling</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes:</label>
+                    <textarea id="notes" placeholder="Any special requirements"></textarea>
+                </div>
+                <button type="submit" class="btn">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 HealthyLife Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
